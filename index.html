@@ -6,12 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Design Observations</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rokkitt:ital,wght@1,300&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="reset.css" />
 
     <style>
@@ -24,47 +18,49 @@
       }
       main {
         max-width: 768px;
-        width: 768px;
+        width: fit-content;
         height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-        padding: 0 20px;
+        align-items: flex-end;
+
+        padding: 0 30px;
       }
-      .title {
-        font-family: "Rokkitt", serif;
-        font-optical-sizing: auto;
+      blockquote {
         font-weight: 300;
         font-style: italic;
-        font-size: 2rem;
+        font-size: 1.6rem;
+
+        margin-top: auto;
       }
-      .author {
+      h5 {
         font-weight: 300;
         font-size: 1rem;
-        align-self: flex-end;
         margin-top: 20px;
       }
       footer {
-        position: absolute;
-        bottom: 10px;
-        padding: 0 20px;
+        width: 100%;
+        text-align: center;
+        margin-top: auto;
+        padding-bottom: 10px;
+
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 0.8rem;
       }
     </style>
   </head>
   <body>
     <main>
-      <q class="title">
-        It is good to think, better to look and think, best to look without
-        thinking.
-      </q>
-      <p class="author">Johann Wolfgang von Goethe</p>
+      <blockquote>
+        "It is good to think, better to look and think, best to look without
+        thinking."
+      </blockquote>
+      <h5>Johann Wolfgang von Goethe</h5>
 
       <footer>
-        <p>
-          This site is still under construction as I continue to explore and
-          refine ideas. Thank you for visiting.
-        </p>
+        This site is still under construction as I continue to explore and
+        refine ideas. Thank you for visiting.
       </footer>
     </main>
   </body>
